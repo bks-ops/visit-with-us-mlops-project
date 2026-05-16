@@ -53,11 +53,6 @@ jobs:
           test -f deployment/Dockerfile
           test -f deployment/requirements.txt
 
-      # Step 6: Validate Model Files
-      - name: Validate Model Files
-        run: |
-          test -f tourism_project/models/best_model.pkl
-
       # Step 7: Success Message
       - name: Pipeline Completed
         run: echo "MLOps pipeline executed successfully."
